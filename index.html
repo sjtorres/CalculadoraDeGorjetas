@@ -5,34 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso de HTML5</title>
+  <title>Calculadora de Gorjetas</title>
 </head>
 
 <body>
-  <h1>Título da página usando o H1</h1>
-  <p>Hello Programador</p>
-  <a href="http://www.sandrotorres.com.br">Site Sandro</a>
-
   <div>
-    <h3>Lista de Elementos</h3>
-    <ol>
-      <li>Elemento de lista usando LI</li>
-      <li>Elemento de lista usando LI</li>
-      <li>Elemento de lista usando LI</li>
-      <li>Elemento de lista usando LI</li>
-    </ol>
+    <h1>Calculadora de Gorjetas</h1>
   </div>
-
   <div>
-    <form action="https://google.com.br/search" method="get">
-      <label for="q">Sua Pesquisa:</label>
-      <input type="text" name="q" required>
-
-      <input type="submit" value="Buscar">
+    <form>
+      <label for="bill">
+        <p>Quanto ficou a conta?</p>
+      </label>
+      <p>
+        R$ <input type="number" placeholder="100" name="bill" id="bill">
+      </p>
+      <label for="serviceQual">
+        <p>Como foi seu serviço?</p>
+      </label>
+      <p>
+        <select name="serviceQual" id="serviceQual">
+          <option value="0" selected disabled>-- Escolha uma opção</option>
+          <option value="0.3">30% - Incrível</option>
+          <option value="0.2">20% - Bom</option>
+          <option value="0.15">15% - Aceitável</option>
+          <option value="0.10">10% - Ruim</option>
+          <option value="0.05">05% - Péssimo</option>
+        </select>
+      </p>
+      <label for="people">
+        <p>Quantas pessoas vão dividir a conta?</p>
+      </label>
+      <p>
+        <input type="number" placeholder="0" name="people" id="people"> pessoa(s)
+      </p>
+      <button type="submit">Calcular</button>
     </form>
   </div>
-
-
 </body>
 
 </html>
